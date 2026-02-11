@@ -28,7 +28,7 @@ export default function SplitSection({
         className={`relative md:w-1/2 min-h-125 
         ${reverse ? 'md:order-1' : ''}`}
       >
-        <img src={imageSrc} alt="Section image" fill className="object-cover" />
+        <img src={imageSrc} alt="Section image" className="object-cover fill" />
       </div>
     </section>
   );

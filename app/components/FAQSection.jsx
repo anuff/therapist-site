@@ -18,7 +18,7 @@ const faqItems = [
 
 export default function FAQSection() {
   return (
-    <section className="py-24">
+    <section className="py-24 border-2">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-16">
           {/* Image */}

@@ -4,6 +4,8 @@ import SplitSection from './components/SplitSection.jsx';
 import SpecialtiesSection from './components/SpecialtiesSection.jsx';
 import AboutSection from './components/AboutSection.jsx';
 import FAQSection from './components/FAQSection.jsx';
+import ProfessionalBackground from './components/ProfessionalBackground.jsx';
+import GetStartedSection from './components/GetStartedSection.jsx';
 
 export default function Home() {
   return (
@@ -38,6 +40,8 @@ With empathy and guidance, we'll work together to navigate the challenges life t
       />
       <AboutSection />
       <FAQSection />
+      <ProfessionalBackground />
+      <GetStartedSection />
     </>
   );
 }
