@@ -1,9 +1,9 @@
-export default function HalfRoundImage({ src, alt }) {
+export default function HalfRoundImage({ src, alt, className = '' }) {
   return (
     <img
       src={src}
       alt={alt}
-      className="md:w-[500] h-[700] rounded-t-full object-cover"
+      className={`rounded-t-full object-cover ${className}`}
     />
   );
 }

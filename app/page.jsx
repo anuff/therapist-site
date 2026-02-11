@@ -1,6 +1,9 @@
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import SplitSection from './components/SplitSection.jsx';
+import SpecialtiesSection from './components/SpecialtiesSection.jsx';
+import AboutSection from './components/AboutSection.jsx';
+import FAQSection from './components/FAQSection.jsx';
 
 export default function Home() {
   return (
@@ -13,6 +16,7 @@ export default function Home() {
         imageSrc="/image1.jpg"
         buttonText="GET IN TOUCH →"
       />
+      <SpecialtiesSection />
       <SplitSection
         title="You don’t have to do this all alone."
         description="If you are facing any of these, there’s hope:
@@ -32,6 +36,8 @@ With empathy and guidance, we'll work together to navigate the challenges life t
         buttonText="WORK WITH ME →"
         reverse={true}
       />
+      <AboutSection />
+      <FAQSection />
     </>
   );
 }
