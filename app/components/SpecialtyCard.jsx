@@ -2,14 +2,14 @@ import CircleImage from './CircleImage';
 
 export default function SpecialtyCard({ title, description, image }) {
   return (
-    <div className="flex flex-col justify-between min-h-125 p-8 border-2 border-amber-700">
+    <div className="bg-secondary flex flex-col justify-between  md:min-w-50 md:min-h-125 p-4 border">
       <div>
-        <h3 className="mb-4">{title}</h3>
-        <p>{description}</p>
+        <p className="mb-8 font-medium">{title}</p>
+        <small className="text-[11px] font-normal">{description}</small>
       </div>
 
-      <div className="mt-8 flex justify-center">
-        <CircleImage src={image} alt={title} size={300} />
+      <div className="flex justify-center py-8">
+        <CircleImage src={image} alt={title} size="big" />
       </div>
     </div>
   );

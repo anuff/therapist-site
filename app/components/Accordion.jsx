@@ -1,12 +1,42 @@
-export default function Accordion({ title, content, isOpen = false }) {
-  return (
-    <div className="space-y-2">
-      <div className="flex items-center justify-between">
-        <p>{title}</p>
-        <span>{isOpen ? '−' : '+'}</span>
-      </div>
+'use client';
 
-      {isOpen && <p>{content}</p>}
+import { FiPlus, FiMinus } from 'react-icons/fi';
+
+export default function Accordion({
+  title,
+  content,
+  isOpen,
+  onToggle,
+  iconPosition = 'left',
+  titleClassName = '',
+  contentClassName = '',
+}) {
+  const Icon = isOpen ? <FiMinus /> : <FiPlus />;
+
+  return (
+    <div className="border-b">
+      <button
+        className="flex items-center justify-between w-full py-2 text-left"
+        onClick={onToggle}
+      >
+        {iconPosition === 'left' && (
+          <span className="text-xl mr-3">{Icon}</span>
+        )}
+
+        <h3 className={`flex-1`}>{title}</h3>
+
+        {iconPosition === 'right' && (
+          <span className="text-xl ml-3">{Icon}</span>
+        )}
+      </button>
+
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+          isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        <div>{content}</div>
+      </div>
     </div>
   );
 }

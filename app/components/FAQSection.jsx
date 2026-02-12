@@ -1,3 +1,5 @@
+'use client';
+import { useState } from 'react';
 import HalfRoundImage from './HalfRoundImage.jsx';
 import Accordion from './Accordion.jsx';
 import HeroImageThree from '@/public/hero-image-3.webp';
@@ -5,20 +7,25 @@ import HeroImageThree from '@/public/hero-image-3.webp';
 const faqItems = [
   {
     title: 'Do you take insurance?',
+    content: 'Answer goes here.',
+    isOpen: false,
   },
   {
     title: 'What are your rates?',
+    content: 'Answer goes here.',
+    isOpen: false,
   },
   {
     title: 'Do you have any openings?',
     content: 'Answer goes here.',
-    isOpen: true,
+    isOpen: false,
   },
 ];
 
 export default function FAQSection() {
+  const [openIndex, setOpenIndex] = useState(null);
   return (
-    <section className="py-24 border-2">
+    <section className="bg-primary py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-16">
           {/* Image */}
@@ -31,16 +38,23 @@ export default function FAQSection() {
           </div>
 
           {/* FAQ */}
-          <div className="flex flex-col items-center justify-center w-full md:w-1/2 border-2 border-amber-500">
-            <h2 className="mb-8">FAQs</h2>
+          <div className="flex flex-col md:flex-col w-full md:w-1/2 pt-20">
+            <h2 className="mb-10">FAQs</h2>
+            <hr />
 
-            <div className="space-y-6 border-2 h-70 w-full">
-              {faqItems.map((item) => (
+            <div>
+              {faqItems.map((item, index) => (
                 <Accordion
                   key={item.title}
-                  title={item.title}
-                  content={item.content}
-                  isOpen={item.isOpen}
+                  title={
+                    <h3 className="md:text-[41px] font-base">{item.title}</h3>
+                  }
+                  content={<p>{item.content}</p>}
+                  isOpen={openIndex === index}
+                  onToggle={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
+                  iconPosition="left"
                 />
               ))}
             </div>

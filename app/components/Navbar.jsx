@@ -1,8 +1,8 @@
 export default function Navbar() {
   return (
-    <header className="flex justify-between items-center px-15 h-20 bg-blue-500 border-2">
+    <header className="flex justify-between items-center px-5 md:px-15 h-20 bg-primary">
       <nav>
-        <h1>Lilac Template</h1>
+        <h3>Lilac Template</h3>
       </nav>
       <ul className="flex gap-8">
         <li>Blog</li>

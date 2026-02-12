@@ -2,22 +2,23 @@ import HalfRoundImage from './HalfRoundImage';
 import CircleImage from './CircleImage';
 import HeroImageTwo from '@/public/hero-image-2.webp';
 import Flowers from '@/public/flowers.webp';
+import PrimaryButton from './PrimaryButton';
 
 export default function AboutSection() {
   return (
-    <section className="py-24">
-      <div className="max-w-7xl mx-auto px-10">
+    <section className="bg-secondary py-20 md:pb-32">
+      <div className="max-w-7xl mx-auto px-5 md:px-10">
         <div className="flex flex-col md:flex-row items-center gap-16">
-          {/* IMAGE FIRST ON MOBILE */}
-          <div className="relative w-full md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
+          {/* IMAGE */}
+          <div className="relative w-full md:w-1/2 flex justify-center order-1 md:order-2">
             <HalfRoundImage
               src={HeroImageTwo.src}
               alt="Main image"
-              className="w-95 h-150"
+              size="small"
             />
 
-            <div className="absolute -bottom-12 -right-30">
-              <CircleImage src={Flowers.src} alt="Flower detail" />
+            <div className="absolute -bottom-2 left-1/2 md:-bottom-10 md:left-3/4 transform -translate-x-1/2">
+              <CircleImage src={Flowers.src} alt="Flower detail" size="small" />
             </div>
           </div>
 
@@ -32,8 +33,8 @@ export default function AboutSection() {
               challenges life throws your way.
             </p>
 
-            <div>
-              <button>LET’S CHAT →</button>
+            <div className="flex justify-center py-10">
+              <PrimaryButton>LET’S CHAT →</PrimaryButton>
             </div>
           </div>
         </div>
