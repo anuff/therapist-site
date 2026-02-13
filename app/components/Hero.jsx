@@ -1,6 +1,7 @@
 import HalfRoundImage from './HalfRoundImage.jsx';
 import PrimaryButton from './PrimaryButton.jsx';
 import HeroImageOne from '@/public/hero-image-1.webp';
+import { FiArrowRight } from 'react-icons/fi';
 import '../globals.css';
 
 export default function Hero() {
@@ -21,7 +22,9 @@ export default function Hero() {
           Therapy for Adults in Minneapolis, MN.
         </p>
 
-        <PrimaryButton>CONNECT WITH ME →</PrimaryButton>
+        <PrimaryButton mode="light">
+          CONNECT WITH ME <FiArrowRight />
+        </PrimaryButton>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import PrimaryButton from './PrimaryButton';
+import { FiArrowRight } from 'react-icons/fi';
 
 export default function GetStarted() {
   return (
@@ -14,7 +15,9 @@ export default function GetStarted() {
           therapeutic journey <p>with you.</p>
         </p>
       </div>
-      <PrimaryButton>get in touch</PrimaryButton>
+      <PrimaryButton mode="dark">
+        GET IN TOUCH <FiArrowRight />
+      </PrimaryButton>
     </section>
   );
 }

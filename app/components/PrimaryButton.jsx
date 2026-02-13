@@ -1,6 +1,16 @@
-export default function PrimaryButton({ children }) {
+export default function PrimaryButton({ children, mode = '' }) {
   return (
-    <button className="flex justify-center border border-[#2f3e1f] tracking-wide hover:bg-[#2f3e1f] hover:text-white transition text-[10px] py-2 px-4 cursor-pointer">
+    <button
+      className={`
+        flex justify-center items-center border tracking-wide transition text-[12px] font-medium py-3 px-6 cursor-pointer
+
+        ${
+          mode === 'dark'
+            ? 'text-white hover:bg-[#ffffff] hover:text-[#7d7a46] border-[#ffffff]'
+            : 'text-[#0c0c0c] hover:bg-[#2f3e1f] hover:text-white border-black'
+        }
+      `}
+    >
       {children}
     </button>
   );

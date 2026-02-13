@@ -1,4 +1,5 @@
-// import SecondaryButton from './SecondaryButton.jsx';
+import SecondaryButton from './SecondaryButton.jsx';
+import { FiArrowRight } from 'react-icons/fi';
 
 export default function SplitSection({
   title,
@@ -9,35 +10,44 @@ export default function SplitSection({
   reverse = false,
 }) {
   return (
-    <section className="flex flex-col-reverse md:h-[80vh] md:flex-row md:h-screen">
+    <section
+      className={`flex flex-col-reverse md:flex-row md:h-screen
+    ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}
+    >
       {/* TEXT SIDE */}
-      <div
-        className={`flex flex-col justify-center md:flex-col h-[80%] px-12 md:w-1/2 md:h-full
-        ${reverse ? 'md:order-2 bg-purple py-10 md:py-20' : 'bg-secondary py-10 md:py-10'}`}
-      >
-        <h2>{title}</h2>
+      <div className="md:w-1/2 ">
+        <div
+          className={`flex flex-col md:h-full
+          ${reverse ? 'md:order-2 bg-purple md:pt-7' : 'bg-secondary pt-5 md:pt-40'}`}
+        >
+          <div className="flex flex-col gap-4 px-10">
+            <h2>{title}</h2>
 
-        {paragraph1 && <p className="mb-4">{paragraph1}</p>}
+            {paragraph1 && <p className="mb-4">{paragraph1}</p>}
+            {bullets.length > 0 && (
+              <ul className="list-disc pl-15 mb-4 space-y-2">
+                {bullets.map((item, i) => (
+                  <li key={i}>
+                    <p>{item}</p>
+                  </li>
+                ))}
+              </ul>
+            )}
 
-        {bullets.length > 0 && (
-          <ul className="list-disc pl-5 mb-4 space-y-2">
-            {bullets.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        )}
+            {paragraph2 && <p>{paragraph2}</p>}
+          </div>
 
-        {paragraph2 && <p>{paragraph2}</p>}
-        {/* <div>
-          <SecondaryButton className="w-full max-w-xs md:max-w-sm">
-            GET IN TOUCH →
-          </SecondaryButton>
-        </div> */}
+          <div className="mt-auto h-10 md:h-16.5 ">
+            <SecondaryButton>
+              GET IN TOUCH <FiArrowRight />
+            </SecondaryButton>
+          </div>
+        </div>
       </div>
 
       {/* IMAGE SIDE */}
       <div
-        className={`md:w-1/2 md:h-full h-[40%] w-full object-cover
+        className={`h-70 md:w-1/2 md:h-full w-full object-cover
         ${reverse ? 'md:order-1' : ''}`}
       >
         <img

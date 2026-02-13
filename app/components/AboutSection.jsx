@@ -3,6 +3,7 @@ import CircleImage from './CircleImage';
 import HeroImageTwo from '@/public/hero-image-2.webp';
 import Flowers from '@/public/flowers.webp';
 import PrimaryButton from './PrimaryButton';
+import { FiArrowRight } from 'react-icons/fi';
 
 export default function AboutSection() {
   return (
@@ -34,7 +35,9 @@ export default function AboutSection() {
             </p>
 
             <div className="flex justify-center py-10">
-              <PrimaryButton>LET’S CHAT →</PrimaryButton>
+              <PrimaryButton>
+                LET’S CHAT <FiArrowRight />
+              </PrimaryButton>
             </div>
           </div>
         </div>
