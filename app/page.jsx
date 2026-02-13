@@ -1,4 +1,3 @@
-import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import SplitSection from './components/SplitSection.jsx';
 import SpecialtiesSection from './components/SpecialtiesSection.jsx';
@@ -12,8 +11,6 @@ export default function Home() {
   const mid = Math.ceil(sections.length / 2);
   return (
     <>
-      <Navbar />
-
       <Hero />
 
       {sections.slice(0, mid).map((section, index) => (

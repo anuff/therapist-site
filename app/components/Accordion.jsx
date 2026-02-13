@@ -8,8 +8,6 @@ export default function Accordion({
   isOpen,
   onToggle,
   iconPosition = 'left',
-  titleClassName = '',
-  contentClassName = '',
 }) {
   const Icon = isOpen ? <FiMinus /> : <FiPlus />;
 

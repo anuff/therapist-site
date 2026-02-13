@@ -1,5 +1,6 @@
 import './globals.css';
 import localFont from 'next/font/local';
+import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 
 const gopher = localFont({
@@ -26,6 +27,7 @@ const gopher = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={gopher.variable}>
+      <Navbar />
       <body className="overflow-x-hidden">{children}</body>
       <Footer />
     </html>
