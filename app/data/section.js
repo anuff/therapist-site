@@ -1,7 +1,7 @@
 export const sections = [
   {
     title: 'Live a fulfilling life.',
-    imageSrc: '/split-image-1.webp',
+    imageSrc: '/split-22.jpg',
     paragraph1:
       "Life can be challenging—especially when you're trying to balance your personal and professional life.",
     paragraph2:
@@ -10,7 +10,7 @@ export const sections = [
   },
   {
     title: 'You don’t have to do this all alone.',
-    imageSrc: '/split-image-2.webp',
+    imageSrc: '/split-11.jpg',
     paragraph1: 'If you are facing any of these, there’s hope:',
     bullets: [
       'Persistent feelings of sadness or hopelessness',

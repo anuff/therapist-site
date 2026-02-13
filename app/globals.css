@@ -1,27 +1,39 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: var(--font-gopher);
-  --color-text-primary: oklch(0.306 0.062 134);
-  --color-primary: #fbf6f5;
-  --color-secondary: #e6e0da;
-  --color-purple: #c3c0cc;
-  --color-green: #7d7a46;
-  --color-black: rgb(0, 0, 0);
+  /* --font-sans: var(--font-gopher); */
+  /* --color-text-primary: oklch(0.306 0.062 134); */
+
+  /* BLUE THEME */
+  /* --color-primary: oklch(97% 0.014 254.604);
+  --color-secondary: #b3c8cf;
+  --color-accent: #89a8b2;
+  --color-dark: #4988c4; */
+  /* TEXT COLOR */
+  /* --color-darkBlue: oklch(29.3% 0.066 243.157); */
+
+  /* LIGHT PURPLE */
+  --color-primary: oklch(96.8% 0.007 247.896);
+  --color-secondary: #d3dcde;
+  --color-accent: #dfdcd7;
+  --color-dark: #577c8e;
+  /* TEXT COLOR */
+  --color-black: black;
 }
 
 @layer utilities {
   .footer-link {
-    @apply underline underline;
+    @apply underline;
   }
 }
 
 @layer base {
   body {
-    @apply text-text-primary;
+    @apply text-black;
+    font-family: var(--font-montserrat-alternates);
   }
   h1 {
-    @apply text-2xl text-center md:text-[80px] font-medium leading-none;
+    @apply text-2xl text-center md:text-[80px] font-medium leading-tight;
   }
 
   h2 {
@@ -40,7 +52,3 @@
     @apply text-base md:text-[18px] font-normal leading-relaxed;
   }
 }
-
-/* section {
-  @apply py-16 md:py-24;
-} */

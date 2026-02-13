@@ -11,7 +11,7 @@ const specialties = [
     title: 'Relationships',
     description:
       "Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.",
-    image: '/special-2.webp',
+    image: '/card-2.jpg',
   },
   {
     title: 'Burnout',
@@ -25,7 +25,7 @@ export default function SpecialtiesSection() {
   return (
     <section className="bg-primary">
       <div className="max-w-8xl mx-auto pt-20 pb-45 px-10 md:py-20">
-        <h2 className="text-center mb-8">My Specialties</h2>
+        <h2 className="text-center mb-8">My Services</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {specialties.map((item, index) => (

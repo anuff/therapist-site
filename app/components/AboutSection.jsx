@@ -1,7 +1,7 @@
 import HalfRoundImage from './HalfRoundImage';
 import CircleImage from './CircleImage';
-import HeroImageTwo from '@/public/hero-image-2.webp';
-import Flowers from '@/public/flowers.webp';
+import HeroImage2 from '@/public/hero-image-2.png';
+import HeroImage from '@/public/hero-image-1.png';
 import PrimaryButton from './PrimaryButton';
 import { FiArrowRight } from 'react-icons/fi';
 
@@ -12,14 +12,14 @@ export default function AboutSection() {
         <div className="flex flex-col md:flex-row items-center gap-16">
           {/* IMAGE */}
           <div className="relative w-full md:w-1/2 flex justify-center order-1 md:order-2">
-            <HalfRoundImage
-              src={HeroImageTwo.src}
-              alt="Main image"
-              size="small"
-            />
+            <HalfRoundImage src={HeroImage.src} alt="Main image" size="small" />
 
             <div className="absolute -bottom-2 left-1/2 md:-bottom-10 md:left-3/4 transform -translate-x-1/2">
-              <CircleImage src={Flowers.src} alt="Flower detail" size="small" />
+              <CircleImage
+                src={HeroImage2.src}
+                alt="Flower detail"
+                size="small"
+              />
             </div>
           </div>
 

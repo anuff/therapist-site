@@ -1,35 +1,31 @@
 import './globals.css';
-import localFont from 'next/font/local';
+import { Albert_Sans, Montserrat_Alternates } from 'next/font/google';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 
-const gopher = localFont({
-  src: [
-    {
-      path: '../public/fonts/Gopher-Light.ttf',
-      weight: '300',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/Gopher-Regular.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/Gopher-Medium.ttf',
-      weight: '500',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-gopher',
+const albertSans = Albert_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+const montserratAlternates = Montserrat_Alternates({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-montserrat-alternates',
 });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={gopher.variable}>
-      <Navbar />
-      <body className="overflow-x-hidden">{children}</body>
-      <Footer />
+    <html
+      lang="en"
+      className={`{albertSans.className} ${montserratAlternates.variable}`}
+    >
+      <body>
+        <Navbar />
+        <body className="overflow-x-hidden">{children}</body>
+        <Footer />
+      </body>
     </html>
   );
 }

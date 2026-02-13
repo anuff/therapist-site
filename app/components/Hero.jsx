@@ -1,6 +1,6 @@
 import HalfRoundImage from './HalfRoundImage.jsx';
 import PrimaryButton from './PrimaryButton.jsx';
-import HeroImageOne from '@/public/hero-image-1.webp';
+import HeroImage1 from '@/public/hero-image.png';
 import { FiArrowRight } from 'react-icons/fi';
 import '../globals.css';
 
@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="bg-primary flex flex-col md:flex-row justify-between items-center px-5 md:px-20 pt-5 gap-10 overflow-x-hidden">
       {/* LEFT: Image */}
       <div>
-        <HalfRoundImage src={HeroImageOne.src} alt="Main image" size="big" />
+        <HalfRoundImage src={HeroImage1.src} alt="Main image" size="big" />
       </div>
 
       {/* RIGHT: Text */}

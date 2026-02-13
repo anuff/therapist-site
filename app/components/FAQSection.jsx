@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import HalfRoundImage from './HalfRoundImage.jsx';
 import Accordion from './Accordion.jsx';
-import HeroImageThree from '@/public/hero-image-3.webp';
+import Flowers from '@/public/flowers.png';
 
 const faqItems = [
   {
@@ -31,7 +31,7 @@ export default function FAQSection() {
           {/* Image */}
           <div className="w-full md:w-1/2 flex justify-center">
             <HalfRoundImage
-              src={HeroImageThree.src}
+              src={Flowers.src}
               alt="Decorative flowers"
               className="w-100 h-155"
             />

@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <div className="bg-primary py-15 pt-10 md:pt-10 pb-10 px-15 flex flex-col md:flex-row items-centerjustify-center items-center md:justify-between">
+      <div className="bg-secondary py-15 pt-10 md:pt-10 pb-10 px-15 flex flex-col md:flex-row items-centerjustify-center items-center md:justify-between">
         <div className="flex flex-col md:flex-col gap-5">
           <h3 className="flex flex-col md:flex-col">Lilac Template</h3>
           <p>
@@ -33,7 +33,7 @@ export default function Footer() {
       </div>
 
       {/* BOTTOM FOOTER */}
-      <div className="py-10 bg-secondary">
+      <div className="py-10 bg-primary">
         <div className="max-w-7xl mx-auto px-2 text-center">
           {/* Legal links */}
           <div className="flex flex-wrap justify-center gap-2">
