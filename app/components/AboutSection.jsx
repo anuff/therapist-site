@@ -14,7 +14,7 @@ export default function AboutSection() {
           <div className="relative w-full md:w-1/2 flex justify-center order-1 md:order-2">
             <HalfRoundImage src={HeroImage.src} alt="Main image" size="small" />
 
-            <div className="absolute -bottom-2 left-1/2 md:-bottom-10 md:left-3/4 transform -translate-x-1/2">
+            <div className="absolute -bottom-2 right-20 md:-bottom-10 md:-right-38 transform -translate-x-1/2">
               <CircleImage
                 src={HeroImage2.src}
                 alt="Flower detail"

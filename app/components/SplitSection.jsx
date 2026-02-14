@@ -18,7 +18,7 @@ export default function SplitSection({
       <div className="md:w-1/2 ">
         <div
           className={`flex flex-col md:h-full
-          ${reverse ? 'md:order-2 bg-accent md:pt-7' : 'bg-secondary md:pt-20'}`}
+          ${reverse ? 'md:order-2 bg-primary md:pt-7 text-green-950' : 'bg-secondary md:pt-20'}`}
         >
           <div className="flex flex-col gap-4  pt-5 px-5 md:px-10">
             <h2>{title}</h2>

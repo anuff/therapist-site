@@ -13,7 +13,7 @@ export default function ProfessionalBackground() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="bg-secondary py-24">
+    <section className="bg-primary py-24">
       <div className="max-w-3xl mx-auto px-6 flex flex-col">
         <h2 className="text-center text-4xl mb-4">
           My Professional Background

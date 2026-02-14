@@ -2,9 +2,6 @@ export const sections = [
   {
     title: 'Live a fulfilling life.',
     imageSrc: '/split-1-green.jpg',
-    // imageSrc: '/split-2-green.jpg',
-    // imageSrc: '/split-3-green.jpg',
-
     paragraph1:
       'Slowing down in a world that doesn’t. Life can feel like a constant race—especially when you are balancing a high-pressure career with your personal life. It’s easy to feel like you have to push through the burnout and stress alone, but you deserve a space to breathe.',
     paragraph2:
@@ -14,9 +11,6 @@ export const sections = [
   {
     title: 'Beyond "Just Getting By".',
     imageSrc: '/split-11.jpg',
-    // imageSrc: '/split-2-green.jpg',
-    // imageSrc: '/split-3-green.jpg',
-
     paragraph1:
       'You don’t have to carry it all on your shoulders. There is a path ahead if you feel:',
     bullets: [

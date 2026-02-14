@@ -11,20 +11,20 @@ const specialties = [
     title: 'Burnout',
     description:
       'I frequently support clients dealing with professional burnout, perfectionism, and high internal pressure.',
-    image: '/card-2.jpg',
+    image: '/burnout.jpg',
   },
   {
     title: 'Trauma Recovery',
     description:
       'I utilize EMDR and body-oriented techniques to help you process past experiences that continue to affect your current sense of safety and confidence.',
-    image: '/card-3.jpg',
+    image: '/trauma.jpg',
   },
 ];
 
 export default function ServiceSection() {
   return (
-    <section className="bg-primary">
-      <div className="max-w-8xl mx-auto pt-20 pb-45 px-10 md:py-20">
+    <section className="bg-dark">
+      <div className="max-w-8xl mx-auto pt-20 pb-15 px-10 md:py-20">
         <h2 className="text-center mb-8">My Services</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

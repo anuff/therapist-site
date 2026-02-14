@@ -21,23 +21,24 @@
   /* --color-darkBlue: #1d252c; */
 
   /* GREEN THEME */
-  --color-primary: #eaf1ea;
-  --color-secondary: #a9eaa9;
-  --color-accent: #cdcebe;
-  --color-dark: #5e7153;
+  --color-primary: #dad7cd;
+  --color-secondary: #b6c1a9;
+  --color-accent: #9aa88a;
+  --color-dark: #d6dccf;
   /* TEXT COLOR */
-  --color-darkBlue: #1d252c;
+  --color-darkOlive: #4a3535;
 }
 
 @layer utilities {
   .footer-link {
     @apply underline;
+    color: var(--color-darkOlive);
   }
 }
 
 @layer base {
   body {
-    @apply text-darkBlue;
+    @apply text-darkOlive;
     font-family: var(--font-);
   }
   h1 {
