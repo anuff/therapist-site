@@ -24,14 +24,23 @@ export default function AboutSection() {
           </div>
 
           {/* TEXT */}
-          <div className="flex flex-col space-y-6 w-full md:w-1/2 order-2 md:order-1">
-            <h2>Hi, I’m Lilac.</h2>
+          <div className="flex flex-col space-y-5 w-full md:w-1/2 order-2 md:order-1">
+            <h2>Hi, I’m Maya.</h2>
 
             <p>
-              I'm committed to providing a safe and supportive environment where
-              we can explore your thoughts, feelings, and behaviors. With
-              empathy and guidance, we'll work together to navigate the
-              challenges life throws your way.
+              I’m a licensed clinical psychologist based in Santa Monica,
+              California, offering therapy for adults who feel overwhelmed by
+              anxiety, stress, or the lingering effects of past experiences.
+              Many of the people I work with are high-achieving, thoughtful, and
+              self-aware—but internally feel exhausted, stuck in overthinking,
+              or emotionally on edge.
+            </p>
+            <p>
+              I believe therapy works best when clients feel respected,
+              understood, and actively involved in the process. If you’re
+              looking for a therapist who combines practical tools with
+              depth-oriented work and who understands the realities of living
+              and working in a fast-paced environment I may be a good fit.
             </p>
 
             <div className="flex justify-center py-10">

@@ -4,21 +4,29 @@
   /* --font-sans: var(--font-gopher); */
   /* --color-text-primary: oklch(0.306 0.062 134); */
 
-  /* BLUE THEME */
-  /* --color-primary: oklch(97% 0.014 254.604);
-  --color-secondary: #b3c8cf;
-  --color-accent: #89a8b2;
-  --color-dark: #4988c4; */
-  /* TEXT COLOR */
-  /* --color-darkBlue: oklch(29.3% 0.066 243.157); */
-
-  /* LIGHT PURPLE */
-  --color-primary: oklch(96.8% 0.007 247.896);
+  /* ICE BLUE THEME */
+  /* --color-primary: oklch(96.8% 0.007 247.896);
   --color-secondary: #d3dcde;
   --color-accent: #dfdcd7;
-  --color-dark: #577c8e;
+  --color-dark: #577c8e; */
   /* TEXT COLOR */
-  --color-black: black;
+  /* --color-black: black; */
+
+  /* WHITE THEME */
+  /* --color-primary: #f5f1ee;
+  --color-secondary: #e7e2dd;
+  --color-accent: #d6d1ca;
+  --color-dark: #aca198; */
+  /* TEXT COLOR */
+  /* --color-darkBlue: #1d252c; */
+
+  /* GREEN THEME */
+  --color-primary: #eaf1ea;
+  --color-secondary: #a9eaa9;
+  --color-accent: #cdcebe;
+  --color-dark: #5e7153;
+  /* TEXT COLOR */
+  --color-darkBlue: #1d252c;
 }
 
 @layer utilities {
@@ -29,15 +37,15 @@
 
 @layer base {
   body {
-    @apply text-black;
-    font-family: var(--font-montserrat-alternates);
+    @apply text-darkBlue;
+    font-family: var(--font-);
   }
   h1 {
-    @apply text-2xl text-center md:text-[80px] font-medium leading-tight;
+    @apply text-2xl text-center md:text-7xl font-medium leading-snug;
   }
 
   h2 {
-    @apply text-2xl md:text-6xl font-medium leading-snug;
+    @apply text-2xl md:text-5xl font-light leading-snug;
   }
 
   h3 {
@@ -49,6 +57,6 @@
   }
 
   p {
-    @apply text-base md:text-[18px] font-normal leading-relaxed;
+    @apply md:text-[18px] font-extralight leading-relaxed;
   }
 }

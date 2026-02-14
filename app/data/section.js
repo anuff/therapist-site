@@ -1,26 +1,32 @@
 export const sections = [
   {
     title: 'Live a fulfilling life.',
-    imageSrc: '/split-22.jpg',
+    imageSrc: '/split-1-green.jpg',
+    // imageSrc: '/split-2-green.jpg',
+    // imageSrc: '/split-3-green.jpg',
+
     paragraph1:
-      "Life can be challenging—especially when you're trying to balance your personal and professional life.",
+      'Slowing down in a world that doesn’t. Life can feel like a constant race—especially when you are balancing a high-pressure career with your personal life. It’s easy to feel like you have to push through the burnout and stress alone, but you deserve a space to breathe.',
     paragraph2:
-      "It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.",
+      'Together, we will create a sanctuary where you can step back from the noise, reconnect with yourself, and develop a more sustainable way of living and working.',
     reverse: false,
   },
   {
-    title: 'You don’t have to do this all alone.',
+    title: 'Beyond "Just Getting By".',
     imageSrc: '/split-11.jpg',
-    paragraph1: 'If you are facing any of these, there’s hope:',
+    // imageSrc: '/split-2-green.jpg',
+    // imageSrc: '/split-3-green.jpg',
+
+    paragraph1:
+      'You don’t have to carry it all on your shoulders. There is a path ahead if you feel:',
     bullets: [
-      'Persistent feelings of sadness or hopelessness',
-      'Trouble focusing or making decisions',
-      'Difficulty maintaining relationships',
-      'Feeling constantly exhausted or unmotivated',
-      'A pervasive sense of being overwhelmed',
+      'Feeling "functional" on the outside while struggling with constant worry.',
+      'The exhausting cycle of overthinking and staying emotionally on edge.',
+      "Difficulty getting a restful night's sleep.",
+      'A sense that you are always "bracing" for the next thing to go wrong.',
     ],
     paragraph2:
-      "With empathy and guidance, we'll work together to navigate the challenges life throws your way.",
+      'With empathy and a grounded approach, we’ll work together to navigate these challenges so you can feel more regulated and at ease in your daily life.',
     reverse: true,
   },
 ];

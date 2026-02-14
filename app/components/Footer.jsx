@@ -3,13 +3,13 @@ export default function Footer() {
     <footer>
       <div className="bg-secondary py-15 pt-10 md:pt-10 pb-10 px-15 flex flex-col md:flex-row items-centerjustify-center items-center md:justify-between">
         <div className="flex flex-col md:flex-col gap-5">
-          <h3 className="flex flex-col md:flex-col">Lilac Template</h3>
+          <h3 className="flex flex-col md:flex-col">Office</h3>
           <p>
-            123 Example Road <br />
-            Minneapolis, MN
+            123th Street 45 W, <br />
+            Santa Monica, CA 90401
           </p>
           <p className="footer-link pb-10 ">
-            email@example.com <br />
+            maya@yahoo.com <br />
             (555) 555-5555
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <text className="pt-8 font-normal text-black">
-            All Rights Reserved © 2024 Your Business Name Here, LLC.
+            All Rights Reserved © 2026 Dr. Maya Reynolds, LLC.
           </text>
         </div>
       </div>

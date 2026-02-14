@@ -1,11 +1,12 @@
 import Hero from './components/Hero.jsx';
 import SplitSection from './components/SplitSection.jsx';
-import SpecialtiesSection from './components/SpecialtiesSection.jsx';
-import AboutSection from './components/AboutSection.jsx';
+import ServiceSection from './components/ServiceSection.jsx';
+import OfficeSection from './components/OfficeSection.jsx';
 import FAQSection from './components/FAQSection.jsx';
 import ProfessionalBackground from './components/ProfessionalBackground.jsx';
 import GetStartedSection from './components/GetStartedSection.jsx';
 import { sections } from './data/section.js';
+import AboutSection from './components/AboutSection.jsx';
 
 export default function Home() {
   const mid = Math.ceil(sections.length / 2);
@@ -17,13 +18,14 @@ export default function Home() {
         <SplitSection key={index} {...section} />
       ))}
 
-      <SpecialtiesSection />
+      <ServiceSection />
 
       {sections.slice(mid).map((section, index) => (
         <SplitSection key={mid + index} {...section} />
       ))}
-
       <AboutSection />
+
+      <OfficeSection />
       <FAQSection />
       <ProfessionalBackground />
       <GetStartedSection />

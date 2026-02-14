@@ -18,14 +18,14 @@ export default function SplitSection({
       <div className="md:w-1/2 ">
         <div
           className={`flex flex-col md:h-full
-          ${reverse ? 'md:order-2 bg-accent md:pt-7' : 'bg-secondary pt-5 md:pt-40'}`}
+          ${reverse ? 'md:order-2 bg-accent md:pt-7' : 'bg-secondary md:pt-20'}`}
         >
-          <div className="flex flex-col gap-4 px-10">
+          <div className="flex flex-col gap-4  pt-5 px-5 md:px-10">
             <h2>{title}</h2>
 
-            {paragraph1 && <p className="mb-4">{paragraph1}</p>}
+            {paragraph1 && <p className="md:mb-4">{paragraph1}</p>}
             {bullets.length > 0 && (
-              <ul className="list-disc pl-15 mb-4 space-y-2">
+              <ul className="list-disc pl-5 md:pl-15 mb-4 space-y-2">
                 {bullets.map((item, i) => (
                   <li key={i}>
                     <p>{item}</p>
@@ -34,7 +34,7 @@ export default function SplitSection({
               </ul>
             )}
 
-            {paragraph2 && <p>{paragraph2}</p>}
+            {paragraph2 && <p className="pb-10">{paragraph2}</p>}
           </div>
 
           <div className="mt-auto h-10 md:h-16.5 ">

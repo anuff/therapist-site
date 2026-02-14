@@ -1,6 +1,6 @@
 import CircleImage from './CircleImage';
 
-export default function SpecialtyCard({ title, description, image }) {
+export default function ServiceCard({ title, description, image }) {
   return (
     <div className="bg-secondary flex flex-col justify-between  md:min-w-50 md:min-h-125 p-4 border">
       <div>
