@@ -24,7 +24,7 @@ export default function AboutSection() {
           </div>
 
           {/* TEXT */}
-          <div className="flex flex-col space-y-5 w-full md:w-1/2 order-2 md:order-1">
+          <div className=" pl-5 flex flex-col space-y-5 w-full md:w-1/2 order-2 md:order-1">
             <h2>Hi, I’m Maya.</h2>
 
             <p>

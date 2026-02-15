@@ -15,10 +15,10 @@ export default function SplitSection({
     ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}
     >
       {/* TEXT SIDE */}
-      <div className="md:w-1/2 ">
+      <div className="md:w-1/2">
         <div
-          className={`flex flex-col md:h-full
-          ${reverse ? 'md:order-2 bg-primary pt-4 md:pt-20 text-green-950' : 'bg-secondary pt-4 md:pt-20'}`}
+          className={`flex flex-col md:h-full  
+          ${reverse ? 'md:order-2 bg-primary pl-5 md:pl-0 pt-4 md:pt-20 text-green-950' : 'bg-secondary pt-4 pl-5 md:pt-20'}`}
         >
           <div className="flex flex-col gap-4  pt-5 px-5 md:px-10">
             <h2>{title}</h2>

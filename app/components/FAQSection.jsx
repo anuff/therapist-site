@@ -49,7 +49,7 @@ export default function FAQSection() {
               {faqItems.map((item, index) => (
                 <Accordion
                   key={item.title}
-                  title={<h3>{item.title}</h3>}
+                  title={<h5>{item.title}</h5>}
                   content={
                     <p className=" mb-2 md:py-2 md:px-9">{item.content}</p>
                   }

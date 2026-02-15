@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <header className="flex justify-between items-center px-5 md:px-15 h-20 bg-primary">
       <nav>
-        <h3 className="font-semibold">
+        <h3 className="font-semibold md:text-start">
           <Link href="/">Dr. Maya Reynolds</Link>
         </h3>
       </nav>
