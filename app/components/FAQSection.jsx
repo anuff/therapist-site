@@ -8,7 +8,7 @@ const faqItems = [
   {
     title: 'What can I expect in our first session?',
     content:
-      'Our first meeting is about getting to know you and your goals. We’ll discuss what’s bringing you in, explore your history, and see if we feel like a good fit. I prioritize creating a warm, non-judgmental space where you can feel at ease from the very beginning.',
+      'Our first meeting is about getting to know you and your goals. We’ll discuss what’s bringing you in, explore your history, and see if we feel like a good fit.',
     isOpen: false,
   },
   {
@@ -20,7 +20,7 @@ const faqItems = [
   {
     title: 'How does EMDR help with trauma?',
     content:
-      'EMDR (Eye Movement Desensitization and Reprocessing) is a specialized therapy that helps your brain process "stuck" memories. Instead of just talking about the past, we use EMDR to reduce the emotional and physical charge of difficult experiences, helping you feel safer and more grounded in the present.',
+      'EMDR (Eye Movement Desensitization and Reprocessing) is a therapy that helps your brain process “stuck” memories and helping you feel more grounded.',
     isOpen: false,
   },
 ];
@@ -32,10 +32,10 @@ export default function FAQSection() {
       <div className="max-w-7xl mx-auto px-6 ">
         <div className="flex flex-col md:flex-row gap-16">
           {/* Image */}
-          <div className="w-full md:w-1/2 flex justify-center ">
+          <div className="w-full md:w-1/2 flex justify-center">
             <HalfRoundImage
               src={sign.src}
-              alt="Decorative flowers"
+              alt="Asign board to work on yourself"
               className="w-100 h-155"
             />
           </div>
@@ -50,7 +50,9 @@ export default function FAQSection() {
                 <Accordion
                   key={item.title}
                   title={<h3>{item.title}</h3>}
-                  content={<p className="md: py-2 md:px-9">{item.content}</p>}
+                  content={
+                    <p className=" mb-2 md:py-2 md:px-9">{item.content}</p>
+                  }
                   isOpen={openIndex === index}
                   onToggle={() =>
                     setOpenIndex(openIndex === index ? null : index)

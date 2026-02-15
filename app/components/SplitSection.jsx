@@ -18,7 +18,7 @@ export default function SplitSection({
       <div className="md:w-1/2 ">
         <div
           className={`flex flex-col md:h-full
-          ${reverse ? 'md:order-2 bg-primary md:pt-7 text-green-950' : 'bg-secondary md:pt-20'}`}
+          ${reverse ? 'md:order-2 bg-primary pt-4 md:pt-20 text-green-950' : 'bg-secondary pt-4 md:pt-20'}`}
         >
           <div className="flex flex-col gap-4  pt-5 px-5 md:px-10">
             <h2>{title}</h2>
@@ -28,7 +28,7 @@ export default function SplitSection({
               <ul className="list-disc pl-5 md:pl-15 mb-4 space-y-2">
                 {bullets.map((item, i) => (
                   <li key={i}>
-                    <p>{item}</p>
+                    <p className=" md:py-1">{item}</p>
                   </li>
                 ))}
               </ul>
@@ -39,7 +39,7 @@ export default function SplitSection({
 
           <div className="mt-auto h-10 md:h-16.5 ">
             <SecondaryButton>
-              GET IN TOUCH <FiArrowRight />
+              <a href="/contact">GET IN TOUCH</a> <FiArrowRight />
             </SecondaryButton>
           </div>
         </div>

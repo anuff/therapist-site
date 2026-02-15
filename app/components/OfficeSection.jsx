@@ -17,11 +17,11 @@ export default function OfficeSection() {
   }, []);
 
   return (
-    <section className="flex flex-col-reverse md:flex-row md:h-screen bg-[#dad7cd]">
+    <section className="flex flex-col-reverse md:flex-row md:h-screen bg-primary">
       {/* TEXT SIDE */}
       <div className="md:w-1/2">
         <div className="flex flex-col md:h-full">
-          <div className="flex flex-col gap-4 px-10 py-5 md:px-10 md:pr-30 md:py-30">
+          <div className="flex flex-col gap-4 px-10 py-7 md:px-10 md:pr-30 md:py-30">
             <h2>A Space to Breathe</h2>
             <p>
               I offer both in-person therapy from my Santa Monica office and
@@ -35,7 +35,8 @@ export default function OfficeSection() {
 
           <div className="mt-auto h-10 md:h-16.5">
             <SecondaryButton>
-              GET IN TOUCH <FiArrowRight />
+              <a href="/contact">GET IN TOUCH </a>
+              <FiArrowRight />
             </SecondaryButton>
           </div>
         </div>

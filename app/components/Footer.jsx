@@ -3,7 +3,7 @@ export default function Footer() {
     <footer>
       <div className="bg-secondary py-15 pt-10 md:pt-10 pb-10 px-15 flex flex-col md:flex-row items-centerjustify-center items-center md:justify-between">
         <div className="flex flex-col items-center md:flex-col md:items-start gap-5">
-          <h3 className="flex flex-col md:flex-col">Office</h3>
+          <h3 className="flex flex-col md:flex-col font-semibold">Office</h3>
           <p className=" text-center md:text-start">
             123th Street 45 W, <br />
             Santa Monica, CA 90401
@@ -15,18 +15,18 @@ export default function Footer() {
         </div>
         <div className="flex flex-col md:flex-row md:gap-70 md:pb-25">
           <div className="flex flex-col items-center md:flex-col md:items-start">
-            <h3>Hours</h3>
+            <h3 className="font-semibold">Hours</h3>
             <p className="text-center pt-5 md:text-left">
               Monday – Friday <br />
               10am – 6pm
             </p>
           </div>
           <div className="flex flex-col items-center mt-4 md:mt-0 md:items-start md:flex-col">
-            <h3>Find</h3>
-            <p className="footer-link text-center md:text-start">
-              Home <br />
-              Contact <br />
-              Blog
+            <h3 className="font-semibold">Find</h3>
+            <p className="footer-link text-center md:text-start font-normal">
+              <a href="/">Home</a> <br />
+              <a href="/contact">Contact</a> <br />
+              <a href="/blog">Blog</a>
             </p>
           </div>
         </div>

@@ -1,25 +1,6 @@
 @import 'tailwindcss';
 
 @theme {
-  /* --font-sans: var(--font-gopher); */
-  /* --color-text-primary: oklch(0.306 0.062 134); */
-
-  /* ICE BLUE THEME */
-  /* --color-primary: oklch(96.8% 0.007 247.896);
-  --color-secondary: #d3dcde;
-  --color-accent: #dfdcd7;
-  --color-dark: #577c8e; */
-  /* TEXT COLOR */
-  /* --color-black: black; */
-
-  /* WHITE THEME */
-  /* --color-primary: #f5f1ee;
-  --color-secondary: #e7e2dd;
-  --color-accent: #d6d1ca;
-  --color-dark: #aca198; */
-  /* TEXT COLOR */
-  /* --color-darkBlue: #1d252c; */
-
   /* GREEN THEME */
   --color-primary: #dad7cd;
   --color-secondary: #b6c1a9;
@@ -39,25 +20,25 @@
 @layer base {
   body {
     @apply text-darkOlive;
-    font-family: var(--font-);
+    /* font-family: var(--font); */
   }
   h1 {
-    @apply text-2xl text-center md:text-7xl font-medium leading-snug;
+    @apply text-2xl text-center md:text-7xl font-bold leading-snug;
   }
 
   h2 {
-    @apply text-2xl md:text-5xl font-light leading-snug;
+    @apply text-2xl md:text-5xl font-bold leading-snug;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl font-medium leading-snug;
+    @apply text-2xl md:text-4xl font-medium leading-snug;
   }
 
   h5 {
-    @apply font-normal md:text-[25px];
+    @apply font-normal text-2xl md:text-[25px];
   }
 
   p {
-    @apply md:text-[18px] font-extralight leading-relaxed;
+    @apply md:text-[18px] font-medium leading-relaxed;
   }
 }

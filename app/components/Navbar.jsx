@@ -1,17 +1,35 @@
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const linkClass = (path) =>
+    pathname === path
+      ? 'text-darkOlive border-b-2 border-darkOlive'
+      : 'hover:text-darkOlive transition';
+
   return (
     <header className="flex justify-between items-center px-5 md:px-15 h-20 bg-primary">
       <nav>
-        <h3>
-          <a href="/">Dr. Maya Reynolds</a>
+        <h3 className="font-semibold">
+          <Link href="/">Dr. Maya Reynolds</Link>
         </h3>
       </nav>
-      <ul className="flex gap-8">
+
+      <ul className="flex gap-8 text-[20px] font-medium">
         <li>
-          <a href="/blog">Blog</a>
+          <Link href="/blog" className={linkClass('/blog')}>
+            Blog
+          </Link>
         </li>
+
         <li>
-          <a href="/contact">Contact</a>
+          <Link href="/contact" className={linkClass('/contact')}>
+            Contact
+          </Link>
         </li>
       </ul>
     </header>

@@ -21,7 +21,7 @@ export default function Accordion({
           <span className="text-xl mr-3">{Icon}</span>
         )}
 
-        <h3 className={`flex-1`}>{title}</h3>
+        <h5 className={`flex-1`}>{title}</h5>
 
         {iconPosition === 'right' && (
           <span className="text-xl ml-3">{Icon}</span>

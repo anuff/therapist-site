@@ -7,7 +7,7 @@ import { FiArrowRight } from 'react-icons/fi';
 
 export default function AboutSection() {
   return (
-    <section className="bg-secondary py-20 md:pb-32">
+    <section className="bg-secondary py-14 md:pb-32">
       <div className="max-w-7xl mx-auto px-5 md:px-10">
         <div className="flex flex-col md:flex-row items-center gap-16">
           {/* IMAGE */}
@@ -43,9 +43,9 @@ export default function AboutSection() {
               and working in a fast-paced environment I may be a good fit.
             </p>
 
-            <div className="flex justify-center py-10">
+            <div className="flex justify-center md:py-10">
               <PrimaryButton>
-                LET’S CHAT <FiArrowRight />
+                <a href="/contact">LET’S CHAT</a> <FiArrowRight />
               </PrimaryButton>
             </div>
           </div>

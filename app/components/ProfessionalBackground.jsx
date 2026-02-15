@@ -15,16 +15,16 @@ export default function ProfessionalBackground() {
   return (
     <section className="bg-primary py-24">
       <div className="max-w-3xl mx-auto px-6 flex flex-col">
-        <h2 className="text-center text-4xl mb-4">
+        <h3 className="text-center mb-4 md:mb-8 font-semibold">
           My Professional Background
-        </h2>
+        </h3>
         <hr />
         <div>
           {backgroundItems.map((item, index) => (
             <Accordion
               key={item.title}
               title={<h5>{item.title}</h5>}
-              content={<p className="pl-16">{item.content}</p>}
+              content={<p className="md:pl-16">{item.content}</p>}
               isOpen={openIndex === index}
               onToggle={() => setOpenIndex(openIndex === index ? null : index)}
               iconPosition="right"
