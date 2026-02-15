@@ -7,7 +7,7 @@ export default function PrimaryButton({ children, mode = '' }) {
         ${
           mode === 'dark'
             ? 'text-white hover:bg-[#ffffff] hover:text-[#7d7a46] border-[#ffffff]'
-            : 'text-darkOlive hover:bg-darkOlive hover:text-white border-[#2f3e1f]'
+            : 'text-darkOlive hover:bg-dark hover:text-white border-[#2f3e1f]'
         }
       `}
     >

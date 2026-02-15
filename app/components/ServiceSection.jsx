@@ -23,7 +23,7 @@ const specialties = [
 
 export default function ServiceSection() {
   return (
-    <section className="bg-dark">
+    <section className="bg-accent">
       <div className="max-w-8xl mx-auto pt-20 pb-15 px-10 md:py-20">
         <h2 className="text-center mb-8">My Services</h2>
 

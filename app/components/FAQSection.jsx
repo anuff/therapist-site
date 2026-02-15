@@ -28,7 +28,7 @@ const faqItems = [
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
   return (
-    <section className="bg-secondary py-24">
+    <section className="bg-primary py-24">
       <div className="max-w-7xl mx-auto px-6 ">
         <div className="flex flex-col md:flex-row gap-16">
           {/* Image */}

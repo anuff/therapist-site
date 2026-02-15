@@ -2,25 +2,22 @@
 
 @theme {
   /* GREEN THEME */
-  --color-primary: #dad7cd;
-  --color-secondary: #b6c1a9;
-  --color-accent: #9aa88a;
-  --color-dark: #d6dccf;
-  /* TEXT COLOR */
-  --color-darkOlive: #4a3535;
+  --color-primary: #efefeb;
+  --color-secondary: #9aa88a;
+  --color-accent: #dad7cd;
+  --color-dark: #c2a789;
 }
 
 @layer utilities {
   .footer-link {
     @apply underline;
-    color: var(--color-darkOlive);
   }
 }
 
 @layer base {
   body {
-    @apply text-darkOlive;
-    /* font-family: var(--font); */
+    @apply text-green-950;
+    font-family: var(--font);
   }
   h1 {
     @apply text-2xl text-center md:text-7xl font-bold leading-snug;
@@ -39,6 +36,6 @@
   }
 
   p {
-    @apply md:text-[18px] font-medium leading-relaxed;
+    @apply md:text-[18px] font-serif leading-relaxed;
   }
 }

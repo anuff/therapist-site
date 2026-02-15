@@ -1,9 +1,9 @@
 import './globals.css';
-import { Noto_Sans } from 'next/font/google';
+import { Work_Sans } from 'next/font/google';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 
-const noto = Noto_Sans({
+const worksans = Work_Sans({
   subsets: ['latin'],
   display: 'swap',
   // weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
@@ -12,7 +12,7 @@ const noto = Noto_Sans({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={noto.className}>
+    <html lang="en" className={worksans.className}>
       <body>
         <Navbar />
         <body className="overflow-x-hidden">{children}</body>

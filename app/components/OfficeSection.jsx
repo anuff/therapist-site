@@ -17,7 +17,7 @@ export default function OfficeSection() {
   }, []);
 
   return (
-    <section className="flex flex-col-reverse md:flex-row md:h-screen bg-primary">
+    <section className="flex flex-col-reverse md:flex-row md:h-screen bg-accent ">
       {/* TEXT SIDE */}
       <div className="md:w-1/2">
         <div className="flex flex-col md:h-full">

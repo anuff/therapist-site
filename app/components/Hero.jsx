@@ -1,6 +1,6 @@
 import HalfRoundImage from './HalfRoundImage.jsx';
 import PrimaryButton from './PrimaryButton.jsx';
-import HeroImage from '@/public/hero-image-green.png';
+import HeroImage from '@/public/hero-image-1.png';
 import { FiArrowRight } from 'react-icons/fi';
 import '../globals.css';
 

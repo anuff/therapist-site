@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <div className="bg-secondary py-15 pt-10 md:pt-10 pb-10 px-15 flex flex-col md:flex-row items-centerjustify-center items-center md:justify-between">
+      <div className="bg-accent py-15 pt-10 md:pt-10 pb-10 px-15 flex flex-col md:flex-row items-centerjustify-center items-center md:justify-between">
         <div className="flex flex-col items-center md:flex-col md:items-start gap-5">
           <h3 className="flex flex-col md:flex-col font-semibold">Office</h3>
           <p className=" text-center md:text-start">

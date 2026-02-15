@@ -12,14 +12,14 @@ export default function Navbar() {
       : 'hover:text-darkOlive transition';
 
   return (
-    <header className="flex justify-between items-center px-5 md:px-15 h-20 bg-primary">
+    <header className=" flex justify-between items-center px-5 md:px-15 h-20 bg-primary">
       <nav>
-        <h3 className="font-semibold md:text-start">
+        <h3 className="font-semibold mr-5 md:text-start  ">
           <Link href="/">Dr. Maya Reynolds</Link>
         </h3>
       </nav>
 
-      <ul className="flex gap-8 text-[20px] font-medium">
+      <ul className="flex gap-10 text-[20px] font-medium">
         <li>
           <Link href="/blog" className={linkClass('/blog')}>
             Blog

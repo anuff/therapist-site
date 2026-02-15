@@ -5,7 +5,7 @@ export default function GetStarted() {
   return (
     <section
       className=" flex flex-col gap-15
-    items-center py-20 md:py-35 bg-accent"
+    items-center py-20 md:py-35 bg-secondary"
     >
       <div className="flex flex-col items-center gap-5 px-4 md:px-2 ">
         <h2 className="text-white">Get started today.</h2>
