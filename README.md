@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Therapist-Site 🌿
 
-## Getting Started
+This repository contains a therapist website built as part of a company assignment to demonstrate both **accurate website replication** and **creative redesign skills**. The project is structured into **two branches**, each serving a specific purpose.
 
-First, run the development server:
+## 📌 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The objective of this project was to:
+- Create an exact **clone of the company-provided website**, maintaining the same theme, fonts, images, and responsiveness.
+- Develop a **redesigned version** of the website using a new theme, fonts, and images, along with an additional section to showcase creativity.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Both versions are fully responsive and optimized for different screen sizes.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌱 Branches
 
-## Learn More
+### 🔹 `Clone` Branch – Website Clone
 
-To learn more about Next.js, take a look at the following resources:
+This branch contains a faithful clone of the website provided by the company.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Features:**
+- Same theme and color scheme  
+- Same fonts and typography  
+- Same images and layout  
+- Fully responsive across devices  
+- Pixel-accurate design replication  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Purpose:**  
+To demonstrate attention to detail and the ability to strictly follow design requirements.
 
-## Deploy on Vercel
+### 🔹 `Redesign` Branch – Creative Redesign
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This branch represents a redesigned version of the website to highlight creativity and UI/UX skills.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Features:**
+- New theme and color palette  
+- New fonts and typography  
+- Updated images and visuals  
+- Fully responsive design  
+- Additional **Office Section** to present the therapist’s workspace  
+
+
+## 🛠️ Tech Stack
+
+- Next.Js  
+- Tailwind
+
