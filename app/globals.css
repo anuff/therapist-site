@@ -2,10 +2,10 @@
 
 @theme {
   /* GREEN THEME */
-  --color-primary: #efefeb;
+  --color-primary: #f4fcea;
   --color-secondary: #9aa88a;
   --color-accent: #dad7cd;
-  --color-dark: #c2a789;
+  /* --color-dark: #f4fcea; */
 }
 
 @layer utilities {
