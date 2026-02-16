@@ -13,7 +13,7 @@ Both versions are fully responsive and optimized for different screen sizes.
 
 ## 🌱 Branches
 
-### 🔹 `Clone` Branch – Website Clone
+### 🔹 `Clone` Branch – Website [Clone](https://my-therapist-clone.netlify.app/)
 
 This branch contains a faithful clone of the website provided by the company.
 
@@ -27,7 +27,7 @@ This branch contains a faithful clone of the website provided by the company.
 **Purpose:**  
 To demonstrate attention to detail and the ability to strictly follow design requirements.
 
-### 🔹 `Redesign` Branch – Creative Redesign
+### 🔹 `Redesign` Branch – Creative Website [Redesign](https://my-therapy-site.netlify.app/)
 
 This branch represents a redesigned version of the website to highlight creativity and UI/UX skills.
 
